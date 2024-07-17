@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.FenbutuMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Fenbutu">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="diqu" property="diqu" jdbcType="VARCHAR"/>
+                                    <result column="quezhenrenshu" property="quezhenrenshu" jdbcType="INTEGER"/>
+                                    <result column="leijiquezhen" property="leijiquezhen" jdbcType="INTEGER"/>
+                                    <result column="leijisiwang" property="leijisiwang" jdbcType="INTEGER"/>
+                                    <result column="leijizhiyu" property="leijizhiyu" jdbcType="INTEGER"/>
+                                
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, diqu, quezhenrenshu, leijiquezhen, leijisiwang, leijizhiyu    </sql>
+    </mapper>
